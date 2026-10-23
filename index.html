@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Handwriting Work From Home</title>
+  <meta name="description" content="Handwriting Work From Home - Earn ₹25,000 - ₹50,000 / Month">
+  <meta name="theme-color" content="#ea580c">
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      -webkit-tap-highlight-color: transparent;
+    }
+
+    body {
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Helvetica Neue", Arial, sans-serif;
+      background: linear-gradient(135deg, #fff7ed 0%, #fed7aa 50%, #ffedd5 100%);
+      padding: 18px 12px;
+      color: #1f2937;
+    }
+
+    .container {
+      width: 100%;
+      max-width: 420px;
+      margin: 0 auto;
+      perspective: 1000px;
+    }
+
+    /* 10D Dimensional Button Styling */
+    .btn-10d {
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      width: 100%;
+      padding: 16px 20px;
+      margin: 14px 0;
+      border: none;
+      border-radius: 9999px;
+      font-size: 17px;
+      font-weight: 800;
+      letter-spacing: 0.5px;
+      text-transform: uppercase;
+      text-decoration: none;
+      color: #ffffff;
+      cursor: pointer;
+      overflow: hidden;
+      transform-style: preserve-3d;
+      transition: all 0.15s cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    /* Primary Orange 10D Button */
+    .btn-join {
+      background: linear-gradient(180deg, #f97316 0%, #ea580c 50%, #c2410c 100%);
+      box-shadow: 
+        0 2px 0 #ffedd5 inset,
+        0 -2px 0 rgba(0, 0, 0, 0.25) inset,
+        0 7px 0 #9a3412,
+        0 14px 22px rgba(234, 88, 12, 0.45);
+      animation: pulse-float 3s ease-in-out infinite;
+    }
+
+    /* Subscribe Gold 10D Button */
+    .btn-sub {
+      background: linear-gradient(180deg, #fbbf24 0%, #f59e0b 50%, #d97706 100%);
+      box-shadow: 
+        0 2px 0 #fef3c7 inset,
+        0 -2px 0 rgba(0, 0, 0, 0.2) inset,
+        0 7px 0 #b45309,
+        0 14px 22px rgba(217, 119, 6, 0.4);
+    }
+
+    /* 10D Interactive States */
+    .btn-10d:hover {
+      transform: translateY(-2px) scale(1.01);
+    }
+
+    .btn-join:hover {
+      box-shadow: 
+        0 2px 0 #ffedd5 inset,
+        0 -2px 0 rgba(0, 0, 0, 0.25) inset,
+        0 9px 0 #9a3412,
+        0 18px 26px rgba(234, 88, 12, 0.55);
+    }
+
+    .btn-sub:hover {
+      box-shadow: 
+        0 2px 0 #fef3c7 inset,
+        0 -2px 0 rgba(0, 0, 0, 0.2) inset,
+        0 9px 0 #b45309,
+        0 18px 26px rgba(217, 119, 6, 0.5);
+    }
+
+    .btn-10d:active {
+      transform: translateY(6px) scale(0.99) !important;
+    }
+
+    .btn-join:active {
+      box-shadow: 
+        0 1px 0 #ffedd5 inset,
+        0 2px 0 #9a3412,
+        0 6px 10px rgba(234, 88, 12, 0.35);
+    }
+
+    .btn-sub:active {
+      box-shadow: 
+        0 1px 0 #fef3c7 inset,
+        0 2px 0 #b45309,
+        0 6px 10px rgba(217, 119, 6, 0.3);
+    }
+
+    /* Holographic Continuous Light Beam */
+    .btn-10d::before {
+      content: "";
+      position: absolute;
+      top: -50%;
+      left: -120%;
+      width: 60%;
+      height: 200%;
+      background: linear-gradient(
+        90deg,
+        rgba(255, 255, 255, 0) 0%,
+        rgba(255, 255, 255, 0.5) 50%,
+        rgba(255, 255, 255, 0) 100%
+      );
+      transform: rotate(25deg);
+      animation: holographic-sheen 3.2s infinite ease-in-out;
+      pointer-events: none;
+    }
+
+    @keyframes holographic-sheen {
+      0% { left: -120%; }
+      40%, 100% { left: 160%; }
+    }
+
+    @keyframes pulse-float {
+      0%, 100% {
+        transform: translateY(0);
+      }
+      50% {
+        transform: translateY(-3px);
+      }
+    }
+
+    /* Card Box */
+    .card {
+      background: #ffffff;
+      border-radius: 26px;
+      padding: 24px 20px;
+      box-shadow: 0 16px 40px -10px rgba(234, 88, 12, 0.18), 0 4px 16px rgba(0, 0, 0, 0.05);
+      border: 1px solid rgba(254, 215, 170, 0.7);
+      text-align: center;
+    }
+
+    h1 {
+      font-size: 23px;
+      font-weight: 900;
+      color: #1c1917;
+      line-height: 1.25;
+      margin-bottom: 6px;
+    }
+
+    .salary-badge {
+      display: inline-block;
+      font-size: 18px;
+      font-weight: 800;
+      color: #ea580c;
+      background: #fff7ed;
+      padding: 6px 16px;
+      border-radius: 9999px;
+      border: 1px dashed #fdba74;
+      margin-bottom: 18px;
+    }
+
+    /* 2x2 Features Grid */
+    .features-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 10px;
+      margin-bottom: 20px;
+    }
+
+    .feature-item {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      background: #fffaf5;
+      border: 1px solid #ffedd5;
+      padding: 10px 12px;
+      border-radius: 12px;
+      font-size: 13.5px;
+      font-weight: 700;
+      color: #374151;
+    }
+
+    .feature-icon {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 22px;
+      height: 22px;
+      background: #16a34a;
+      color: #ffffff;
+      border-radius: 6px;
+      font-size: 12px;
+      flex-shrink: 0;
+    }
+
+    /* Hero Illustration Badge */
+    .hero-banner {
+      width: 100%;
+      background: linear-gradient(135deg, #fff7ed 0%, #ffedd5 100%);
+      border-radius: 18px;
+      padding: 20px 14px;
+      border: 1px solid #fed7aa;
+      margin-bottom: 8px;
+    }
+
+    .hero-banner svg {
+      width: 80px;
+      height: 80px;
+      margin: 0 auto 12px;
+      display: block;
+      filter: drop-shadow(0 6px 12px rgba(234, 88, 12, 0.25));
+    }
+
+    .banner-title {
+      font-size: 16px;
+      font-weight: 800;
+      color: #c2410c;
+      margin-bottom: 4px;
+    }
+
+    .banner-desc {
+      font-size: 13px;
+      color: #78350f;
+      line-height: 1.4;
+    }
+
+    /* Click Ripple Effect */
+    .ripple-effect {
+      position: absolute;
+      border-radius: 50%;
+      background: rgba(255, 255, 255, 0.5);
+      transform: scale(0);
+      animation: ripple 0.6s linear;
+      pointer-events: none;
+    }
+
+    @keyframes ripple {
+      to {
+        transform: scale(4);
+        opacity: 0;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    
+    <!-- Top 10D CTA Button -->
+    <a 
+      class="btn-10d btn-join" 
+      href="https://t.me/+C-Oh5GVcJ3c4NmJl" 
+      target="_blank" 
+      rel="noopener noreferrer"
+    >
+      <span>🚀</span> JOIN TELEGRAM CHANNEL
+    </a>
+
+    <!-- Central Card -->
+    <div class="card">
+      <h1>Handwriting Work From Home</h1>
+      <div class="salary-badge">
+        Earn ₹25,000 - ₹50,000 / Month
+      </div>
+
+      <div class="features-grid">
+        <div class="feature-item">
+          <span class="feature-icon">✓</span> Work From Home
+        </div>
+        <div class="feature-item">
+          <span class="feature-icon">✓</span> No Investment
+        </div>
+        <div class="feature-item">
+          <span class="feature-icon">✓</span> Daily Payment
+        </div>
+        <div class="feature-item">
+          <span class="feature-icon">✓</span> Limited Seats
+        </div>
+      </div>
+
+      <!-- Built-in Vector Illustration (Zero broken images on GitHub) -->
+      <div class="hero-banner">
+        <svg viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <rect x="15" y="10" width="70" height="80" rx="8" fill="#ffffff" stroke="#ea580c" stroke-width="3"/>
+          <line x1="26" y1="26" x2="74" y2="26" stroke="#fdba74" stroke-width="3" stroke-linecap="round"/>
+          <line x1="26" y1="38" x2="74" y2="38" stroke="#fdba74" stroke-width="3" stroke-linecap="round"/>
+          <line x1="26" y1="50" x2="65" y2="50" stroke="#fdba74" stroke-width="3" stroke-linecap="round"/>
+          <line x1="26" y1="62" x2="74" y2="62" stroke="#fdba74" stroke-width="3" stroke-linecap="round"/>
+          <!-- Pen Graphic -->
+          <path d="M68 45 L82 59 L54 87 L40 88 L41 74 Z" fill="#ea580c"/>
+          <path d="M40 88 L43 78 L50 85 Z" fill="#9a3412"/>
+          <circle cx="75" cy="52" r="3" fill="#ffffff"/>
+        </svg>
+        <div class="banner-title">Authentic Handwriting Assignment</div>
+        <div class="banner-desc">Flexible hours • India-wide project allocation • Fast approval</div>
+      </div>
+    </div>
+
+    <!-- Bottom 10D CTA Button -->
+    <a 
+      class="btn-10d btn-join" 
+      href="https://t.me/+C-Oh5GVcJ3c4NmJl" 
+      target="_blank" 
+      rel="noopener noreferrer"
+    >
+      <span>🚀</span> JOIN TELEGRAM CHANNEL
+    </a>
+
+    <!-- Secondary 10D Subscribe Button -->
+    <a 
+      class="btn-10d btn-sub" 
+      href="https://t.me/+C-Oh5GVcJ3c4NmJl" 
+      target="_blank" 
+      rel="noopener noreferrer"
+    >
+      <span>⭐</span> SUBSCRIBE NOW
+    </a>
+
+  </div>
+
+  <script>
+    // 10D Tactile Ripple Effect on Click
+    document.querySelectorAll('.btn-10d').forEach(button => {
+      button.addEventListener('click', function (e) {
+        const ripple = document.createElement('span');
+        const rect = this.getBoundingClientRect();
+        const size = Math.max(rect.width, rect.height);
+
+        ripple.style.width = size + 'px';
+        ripple.style.height = size + 'px';
+        ripple.style.left = (e.clientX - rect.left - size / 2) + 'px';
+        ripple.style.top = (e.clientY - rect.top - size / 2) + 'px';
+        ripple.className = 'ripple-effect';
+
+        this.appendChild(ripple);
+
+        setTimeout(() => {
+          ripple.remove();
+        }, 600);
+      });
+    });
+  </script>
+</body>
+</html>
